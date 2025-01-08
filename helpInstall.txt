@@ -1,0 +1,23 @@
+## Passos para Executar o Projeto
+
+1. Navegue até o diretório do projeto:
+   ```bash
+   cd caminho/do/projeto
+
+2. Inicialize o módulo Go:
+    go mod init notificador-vencimentos
+
+3. Obtenha os módulos Go necessários:
+    go get github.com/aws/aws-sdk-go
+
+4. Configure o contexto da AWS:
+    * Execute o comando abaixo para configurar suas credenciais AWS 
+    (caso ainda não tenha feito isso):
+        aws configure
+    * Insira seu aws_access_key_id, aws_secret_access_key e a região 
+    (exemplo: us-west-2) quando solicitado.
+
+5. Execute o arquivo Go:
+    go run main.go
+
+
